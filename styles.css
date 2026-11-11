@@ -307,6 +307,20 @@ a:hover { text-decoration-thickness: 2px; }
 }
 .contact__card strong { font-weight: 600; font-size: 1.3rem; }
 
+/* Om JobLoop */
+.about {
+  display: grid; gap: clamp(40px, 6vw, 80px);
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  align-items: center;
+}
+.about__media { margin: 0; }
+.about__media img { width: 100%; aspect-ratio: 3 / 2; object-fit: cover; border-radius: var(--r-md); }
+.about__media figcaption {
+  font-family: var(--font-head); font-size: 0.9rem; color: var(--muted);
+  margin-top: 12px; padding-left: 14px; border-left: 3px solid var(--orange);
+}
+@media (max-width: 900px) { .about { grid-template-columns: minmax(0, 1fr); } }
+
 /* Footer */
 .site-footer { padding: 40px 0; border-top: 1px solid var(--line); }
 .site-footer__inner {
